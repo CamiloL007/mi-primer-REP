@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Ropa Nike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section#productos, section#galeria {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section#contacto, section#direccion {
+            background-color: #eaeaea;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('comprar-buzo').addEventListener('click', () => {
+                alert('Gracias por tu compra!');
+            });
+            document.getElementById('comprar-short').addEventListener('click', () => {
+                alert('Gracias por tu compra de Short!');
+            });
+            document.getElementById('comprar-zapatillas').addEventListener('click', () => {
+                alert('Gracias por tu compra de Zapatillas!');
+            });
+            document.getElementById('mostrar-direccion').addEventListener('click', () => {
+                alert('Dirección: Av. Siempre Viva 742, Springfield');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>NIKE</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#direccion" id="mostrar-direccion">Dirección</a></li>
+                <li><a href="#galeria">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Bienvenido a la Tienda Nike
+                <p></p>
+                <p></p>
+
+                Descubre la esencia del deporte y la innovación en nuestra tienda, ofrecemos una selección de ropa deportiva, calzados diseñados para ayudarte a alcanzar tu máximo rendimiento. Cada prenda refleja la dedicación de Nike a la calidad, la tecnología avanzada y el estilo vanguardista.
+            </h2>
+            <div class="producto">
+                <img src="buzo.jpg" alt="Buzo Nike">
+                <p>Nike Sportswear Tech Fleece Windrunner
+                    Campera de Moda Unisex
+                    $197.999 
+                    <p></p>
+                    .</p>
+                <button id="comprar-buzo">Comprar campera</button>
+            </div>
+            <div class="producto">
+                <img src="short.jpg" alt="Short deportivo Nike">
+                <p>San Lorenzo 2023 Stadium
+                    Short de Fútbol para Hombre
+                    $47.999- Ideal para entrenamientos y días calurosos.</p>
+                <button id="comprar-short">Comprar Short</button>
+            </div>
+            <div class="producto">
+                <img src="zapatillas.jpg" alt="Zapatillas Nike">
+                <p>Nike Air Force 1 '07
+                    Zapatillas de Moda para Mujer
+                    $209.999
+                    <p></p>
+                     Estilo legendario y refinado.
+El fulgor vive en Nike Air Force 1 ’07, el icono del basquetbol que le da un toque fresco a las características más recordadas: colores audaces y la cantidad perfecta de destellos para que brilles.</p>
+                <button id="comprar-zapatillas">Comprar Zapatillas</button>
+            </div>
+        </section>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="producto">
+                <img src="buzo 11.jpg" alt="Buzo Nike">
+                <p>Jordan Flight MVP
+                    Buzo Jordan para Hombre
+                    $101.499</p>
+                <button id="comprar-buzo2">comprar buzo</button>
+            </div>
+            <div class="producto">
+                <img src="zapatillas11.jpg" alt="Zapatillas Nike">
+                <p>Nike Air Force 1 07 LX
+                    Zapatillas de Moda para Hombre
+                    $269.999</p>
+                <button id="comprar-zapatillas2">Comprar zapatilla</button>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Nombre: Juan Pérez</p>
+            <p>Teléfono: +54 9 11 1234 5678</p>
+            <p>.</p>
+            <p>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Venta de Ropa Nike. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
